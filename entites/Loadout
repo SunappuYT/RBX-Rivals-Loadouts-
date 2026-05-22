@@ -1,0 +1,88 @@
+{
+  "name": "Loadout",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Name of the loadout"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Display name of the creator"
+    },
+    "primary_weapon": {
+      "type": "string",
+      "description": "Primary weapon used"
+    },
+    "secondary_weapon": {
+      "type": "string",
+      "description": "Secondary weapon used"
+    },
+    "melee": {
+      "type": "string",
+      "description": "Melee weapon used"
+    },
+    "utility": {
+      "type": "string",
+      "description": "Utility item used"
+    },
+    "sensitivity": {
+      "type": "number",
+      "description": "Mouse/input sensitivity value"
+    },
+    "playstyle": {
+      "type": "string",
+      "enum": [
+        "Aggressive",
+        "Defensive",
+        "Balanced",
+        "Support",
+        "Sniper"
+      ],
+      "description": "Overall playstyle"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Tips and strategy notes"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags"
+    },
+    "upvotes": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of upvotes"
+    },
+    "rank_tier": {
+      "type": "string",
+      "enum": [
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Platinum",
+        "Diamond",
+        "Onyx",
+        "Nemesis",
+        "Archnemesis"
+      ],
+      "description": "Recommended rank tier"
+    },
+    "special_title": {
+      "type": "string",
+      "description": "Admin-assigned special title"
+    },
+    "is_banned": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether removed by admin"
+    }
+  },
+  "required": [
+    "title",
+    "primary_weapon"
+  ]
+}
