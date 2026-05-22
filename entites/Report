@@ -1,0 +1,31 @@
+{
+  "name": "Report",
+  "type": "object",
+  "properties": {
+    "loadout_id": {
+      "type": "string",
+      "description": "ID of the reported loadout"
+    },
+    "loadout_title": {
+      "type": "string",
+      "description": "Title of the reported loadout (for display)"
+    },
+    "reporter_email": {
+      "type": "string",
+      "description": "Email of the user who submitted the report"
+    },
+    "reason": {
+      "type": "string",
+      "description": "Reason for the report"
+    },
+    "resolved": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the report has been reviewed by an admin"
+    }
+  },
+  "required": [
+    "loadout_id",
+    "reporter_email"
+  ]
+}
