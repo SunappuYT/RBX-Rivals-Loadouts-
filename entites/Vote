@@ -1,0 +1,18 @@
+{
+  "name": "Vote",
+  "type": "object",
+  "properties": {
+    "loadout_id": {
+      "type": "string",
+      "description": "ID of the loadout that was voted on"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who voted"
+    }
+  },
+  "required": [
+    "loadout_id",
+    "user_email"
+  ]
+}
